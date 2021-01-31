@@ -1,0 +1,9 @@
+numpy==1.16.4
+scipy
+matplotlib
+scikit-image
+h5py
+tensorflow==1.13.1
+tensorflow-gpu==1.13.1
+
+
