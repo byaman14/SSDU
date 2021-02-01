@@ -42,8 +42,8 @@ if args.data_opt == 'Coronal_PD':
 ## Citation
 If you use these codes, please cite
 ```
-@Article{yaman2020self,
-   Author="Yaman, B.  and Hosseini, S. A. H.  and Moeller, S.  and Ellermann, J.  and Ugurbil, K.  and Akcakaya, M. ",
+@Article{yaman2020self_mrm,
+   Author="Yaman, Burhaneddin and Hosseini, Seyed Amir Hossein and Moeller, Steen and Ellermann, Jutta and Ugurbil, Kamil and Akcakaya, Mehmet",
    Title="{Self-Supervised Learning of Physics-Guided Reconstruction Neural Networks without Fully-Sampled Reference Data}",
    Journal="Magnetic Resonance in Medicine",
    Year="2020",
@@ -51,6 +51,15 @@ If you use these codes, please cite
    Number="6",
    Pages="3172--3191",
    Month="Dec"
+}
+
+@inproceedings{yaman2020self_isbi,
+  title={Self-supervised physics-based deep learning MRI reconstruction without fully-sampled data},
+  author={Yaman, Burhaneddin and Hosseini, Seyed Amir Hossein and Moeller, Steen and Ellermann, Jutta and Ugurbil, Kamil and Akcakaya, Mehmet},
+  booktitle={ Proc. IEEE Int. Symp. Biomed. Imag. (ISBI)},
+  pages={921--925},
+  year={2020},
+  organization={IEEE}
 }
 ```
 
