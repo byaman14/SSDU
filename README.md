@@ -63,6 +63,9 @@ If you use these codes, please cite
 }
 ```
 
+## Copyright & License Notice
+© 2021 Regents of the University of Minnesota. Academic and Research Use Only.
 
-# Questions
+## Questions
 If you have questions or issues, please open an issue or reach out to me at yaman013 at umn.edu .
+
