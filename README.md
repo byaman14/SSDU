@@ -31,7 +31,7 @@ SSDU training can be performed by running `train.py` file. Prior to running trai
 
 We highly recommend the users to set the outer k-space regions with no signal (see below figure) as 1 in training mask to ensure consistency with acquired measurements. This should be done for both `train.py` and `test.py` files.
 <img src="figs/fig2.png" align="center" width="500px"> <br>
-*Red arrows points at the outer k-space regions with no signal (in this example, first 17 columns and last 17 columns of k-space have no signal). These regions should be set as 1 in the train mask to ensure data consistency. For knee dataset used in our experiments, this can be done as (see lines 81-83 in `train.py` and 40-42 in `test.py`)*
+*Red arrows points at the outer k-space regions with no signal (in this example, first 17 columns and last 16 columns of k-space have no signal). These regions should be set as 1 in the train mask to ensure data consistency. For knee dataset used in our experiments, this can be done as (see lines 81-83 in `train.py` and 40-42 in `test.py`)*
 ```
 # %%  zeropadded outer edges of k-space with no signal
 if args.data_opt == 'Coronal_PD':
@@ -64,7 +64,9 @@ If you use these codes, please cite
 ```
 
 ## Copyright & License Notice
-© 2021 Regents of the University of Minnesota. Academic and Research Use Only.
+© 2021 Regents of the University of Minnesota
+
+SSDU is copyrighted by Regents of the University of Minnesota and covered by US 17/075,411. Regents of the University of Minnesota will license the use of SSDU solely for educational and research purposes by non-profit institutions and US government agencies only. For other proposed uses, contact umotc@umn.edu. The software may not be sold or redistributed without prior approval. One may make copies of the software for their use provided that the copies, are not sold or distributed, are used under the same terms and conditions. As unestablished research software, this code is provided on an "as is'' basis without warranty of any kind, either expressed or implied. The downloading, or executing any part of this software constitutes an implicit agreement to these terms. These terms and conditions are subject to change at any time without prior notice.
 
 ## Questions
 If you have questions or issues, please open an issue or reach out to me at yaman013 at umn.edu .
