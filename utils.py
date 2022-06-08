@@ -11,6 +11,7 @@ def get_train_directory(args):
     Returns
     -------
     directories of the kspace, sensitivity maps and mask
+    kspace and sensitivity maps should have size of nSlices x nrow x ncol x ncoil and mask should have size of nrow x ncol
 
     """
 
