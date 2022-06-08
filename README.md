@@ -25,9 +25,9 @@ We have provided a saved model using Coronal proton density dataset. However, we
 
 Moreover, SSDU is agnostic to CNN architecture. Hence, it should be retrained with the matching CNN for fair comparisons
 ## How to use
-SSDU training can be performed by running `train.py` file. Prior to running training file, hyperparameters such as number of unrolled blocks, split ratio (<b>ρ</b>) for training and loss masks can be adjusted from `parser_ops.py`. `train.py` file retrieves directories of datasets (kspace, sensitivity maps and mask) from `get_train_directory.py` in `utils.py` file. Users should set these directories prior to running `train.py` file.
+SSDU training can be performed by running `train.py` file. Prior to running training file, hyperparameters such as number of unrolled blocks, split ratio (<b>ρ</b>) for training and loss masks can be adjusted from `parser_ops.py`. `train.py` file retrieves directories of datasets (kspace, sensitivity maps and mask. Note the kspace and sensitivity maps should have size of nSlices x nrow x ncol x ncoil and mask should have size of nrow x ncol) from `get_train_directory` function defined in `utils.py` file. Users should set these directories prior to running `train.py` file.
 
-`train.py`  file generates a test model and save them to the directory defined by user. Testing can be performed by running `test.py` file. `test.py` retrieves directories of datasets as well as  saved training model from `get_test_directory.py` in `utils.py` file. Users should set these directories prior to running `test.py` file.
+`train.py`  file generates a test model and save them to the directory defined by user. Testing can be performed by running `test.py` file. `test.py` retrieves directories of datasets as well as  saved training model from `get_test_directory` function defined in `utils.py` file. Users should set these directories prior to running `test.py` file.
 
 We highly recommend the users to set the outer k-space regions with no signal (see below figure) as 1 in training mask to ensure consistency with acquired measurements. This should be done for both `train.py` and `test.py` files.
 <img src="figs/fig2.png" align="center" width="500px"> <br>
