@@ -43,7 +43,10 @@ def get_test_directory(args):
     Note: users should set the directories prior to running test file
     Returns
     -------
-    directories of the kspace, sensitivity maps and mask and ;
+    directories of the kspace, sensitivity maps and mask
+    
+    kspace and sensitivity maps should have size of nSlices x nrow x ncol x ncoil and mask should have size of nrow x ncol
+
     saved_model_dir : saved training model directory
 
     """
